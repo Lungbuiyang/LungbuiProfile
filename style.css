@@ -1,0 +1,271 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Navbar */
+
+.navbar{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: sticky;
+	background-color: rgb(56, 46, 46);
+	top: 0;
+}
+
+.navbar ul{
+	display: flex;
+	list-style: none;
+	margin: 20px 0px;
+}
+
+.navbar ul li{
+	font-family: century;
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+.navbar ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 8px 25px;
+	transition: all .5s ease;
+}
+
+/* HOME */
+
+#home{
+	display: flex;
+	flex-direction: column;
+	background-color: gray;
+	height: 840px;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+#home img{
+	width: 500px;
+	height: 550px;
+	border-radius: 50%;
+}
+
+#home::before{
+	content: "";
+	position: absolute; 
+	top: 0;
+	right: 0;
+	/*background-image: url('background.jfif');*/
+	height: 700px;
+	width: 100%;
+	z-index: -1;
+	opacity: .8;
+}
+#main{
+	display: flex;
+	flex-direction: column;
+	/*background-color: gray;*/
+	height: 840px;
+	align-items: center;
+	top: 30%;
+	right: 10%;
+}
+.heading{
+	font-family: century;
+	font-size: 3rem;
+	text-align: center;
+	margin: 40px 0px;
+	color: white;
+}
+
+/* About me */
+
+#about{
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	background-color: gray;
+	padding: 20px;
+	margin-top: 2px;
+}
+#pic{
+	display: flex;
+}
+/*#pic img{
+	width: 575px;
+	height: 400px;*/
+
+#intro{
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+	padding: 10px;
+}
+#intro p{
+	color: white;
+	font-size: 20px;
+}
+
+/* skills */
+
+#skills{
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	background-color: gray;
+	padding: 20px;
+	margin-top: 2px;
+}
+
+.table {
+	display: flex;
+	flex-direction: column;
+	/*background-color: gray;*/
+	height: 350px;
+	align-items: center;
+	top: 30%;
+	right: 10%;
+  }
+  
+td, th {
+	text-align: left;
+	padding: 8px;
+	color: white;
+	font-size: 20px;
+	border: 1px solid white;
+  }
+
+  /* hobbies */
+#hobbies{
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	background-color: gray;
+	padding: 20px;
+	margin-top: 2px;
+}
+.hobby{
+	display: flex;
+	flex-direction: column;
+	/*background-color: gray;*/
+	height: 200px;
+	align-items: center;
+	top: 30%;
+	right: 10%;
+	color: white;
+	font-size: 20px;
+}
+
+ /* contact */
+
+#contact{
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	background-color: gray;
+	padding: 20px;
+	margin-top: 2px;
+}
+
+.contact-in{
+	width: 80%;
+	margin: auto;
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+	border-radius: 10px;
+	background: #fff;
+	box-shadow: 0px 0px 10px 0px #666;
+}
+.contact-map{
+	width: 100%;
+	height: auto;
+	flex: 50%;
+}
+.contact-map iframe{
+	width: 100%;
+	height: 100%;
+}
+.contact-form{
+	padding-left: 10px;
+	width: 100%;
+	height: auto;
+	flex: 50%;
+	text-align: center;
+}
+.contact-form h1{
+	margin-bottom: 10px;
+}
+.contact-form-txt{
+	width: 100%;
+	height: 40px;
+	color: #000;
+	border: 1px solid #bcbcbc;
+	border-radius: 50px;
+	outline: none;
+	margin-bottom: 20px;
+	padding: 15px;
+}
+.contact-form-txtarea{
+	width: 100%;
+	height: 130px;
+	color: #000;
+	border: 1px solid #bcbcbc;
+	border-radius: 35px;
+	outline: none;
+	margin-bottom: 20px;
+	padding: 15px;
+}
+.contact-form-btn{
+	width: 100%;
+	color: #faf3f3;
+	border: none;
+	border-radius: 40px;
+	outline: none;
+	text-transform: uppercase;
+	background-color: #095785;
+	cursor: pointer;
+	font-size: 18px;
+	padding: 15px;
+}
+
+ /* footer */
+
+#footer{
+	margin-top: 2px;
+	background-color: black;
+	padding: 30px;
+	color: #fff;
+	text-align: center;
+	font-size: 20px;
+}
+.footer-about{
+	padding: 20px;
+}
+
+.footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #3c3fe7;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+
+
