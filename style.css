@@ -13,20 +13,18 @@
 	position: sticky;
 	background-color: rgb(56, 46, 46);
 	top: 0;
+	z-index: 1;
 }
-
 .navbar ul{
 	display: flex;
 	list-style: none;
 	margin: 20px 0px;
 }
-
 .navbar ul li{
 	font-family: century;
 	font-size: 1.1rem;
 	font-weight: bold;
 }
-
 .navbar ul li a{
 	text-decoration: none;
 	color: white;
@@ -50,7 +48,6 @@
 	height: 550px;
 	border-radius: 50%;
 }
-
 #home::before{
 	content: "";
 	position: absolute; 
@@ -92,10 +89,6 @@
 #pic{
 	display: flex;
 }
-/*#pic img{
-	width: 575px;
-	height: 400px;*/
-
 #intro{
 	display: flex;
 	flex-direction: column;
@@ -107,57 +100,72 @@
 	font-size: 20px;
 }
 
-/* skills */
+/* skills card */
 
 #skills{
 	display: flex;
 	flex-direction: column;
 	box-sizing: border-box;
-	background-color: gray;
 	padding: 20px;
 	margin-top: 2px;
+	background-color: gray;
+	z-index: -1; 
 }
-
-.table {
+.card-container{
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+	flex-wrap: wrap;
+}
+.card{
+	width: 250px;
+	height: 300px;
+	position: relative;
+	background-color: #cecbd8;
 	display: flex;
 	flex-direction: column;
-	/*background-color: gray;*/
-	height: 350px;
+	justify-content: center;
 	align-items: center;
-	top: 30%;
-	right: 10%;
-  }
-  
-td, th {
-	text-align: left;
-	padding: 8px;
-	color: white;
-	font-size: 20px;
-	border: 1px solid white;
-  }
+	border-radius: 3px;
+	padding: 20px;
+	transition: all 0.3s ease-in;
+}
+.card:hover{
+	background-color: rgb(184, 174, 174);
+	color: rgb(247, 243, 243);
+	box-shadow: 0px 0px;
+}
+.card-title{
+	padding: 20px 10px;
+	font-size: 1rem;
+	text-transform: uppercase;
+	text-shadow: 1px 0px 2px #262654;
+}
+.card-title:hover{
+	transform: scale(1.4);
+	transition: all 0.3s ease-in;
 
-  /* hobbies */
+}
+.card-text{
+	line-height: 20px;
+	font-size: 20px;
+	text-align: center;
+}
+
+/* hobbies */
+
 #hobbies{
 	display: flex;
 	flex-direction: column;
 	box-sizing: border-box;
 	background-color: gray;
-	padding: 20px;
+	padding-bottom: 20px;
 	margin-top: 2px;
 }
-.hobby{
-	display: flex;
-	flex-direction: column;
-	/*background-color: gray;*/
-	height: 200px;
-	align-items: center;
-	top: 30%;
-	right: 10%;
-	color: white;
-	font-size: 20px;
-}
 
- /* contact */
+/* contact */
 
 #contact{
 	display: flex;
@@ -166,8 +174,8 @@ td, th {
 	background-color: gray;
 	padding: 20px;
 	margin-top: 2px;
+	flex-wrap: wrap;
 }
-
 .contact-in{
 	width: 80%;
 	margin: auto;
@@ -225,47 +233,68 @@ td, th {
 	border-radius: 40px;
 	outline: none;
 	text-transform: uppercase;
-	background-color: #095785;
+	background-color: #2e8fc7;
 	cursor: pointer;
 	font-size: 18px;
 	padding: 15px;
 }
+.contact-form-btn:hover{
+	color: #faf3f3;
+	text-transform: uppercase;
+	background-color: #062333;
+	cursor: pointer;
+	transition: all 0.3s linear;
+}
 
- /* footer */
+
+/*  footer  */
 
 #footer{
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	background-color: rgb(22, 1, 1);
+	padding-top: 30px;
 	margin-top: 2px;
-	background-color: black;
-	padding: 30px;
-	color: #fff;
-	text-align: center;
-	font-size: 20px;
+	place-items: center;
+	height: 250px;
+	flex-wrap: wrap;
 }
 .footer-about{
-	padding: 20px;
+	color: #fff;
+	font-size: 20px;
+	padding: 10px;
+	text-align: center;
 }
-
-.footer-distributed .footer-icons a {
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-    background-color: #3c3fe7;
-    border-radius: 2px;
-    font-size: 20px;
-    color: #ffffff;
-    text-align: center;
-    line-height: 35px;
-    margin-right: 3px;
-    margin-bottom: 5px;
+.socialicons{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-
-
-
-
-
-
-
-
+.socialicons a{
+	width: 100px;
+	height: 100px;
+	background-color: #f5f6fa;
+	border-radius: 50px;
+	text-align: center;
+	line-height: 110px;
+	margin: 10px;
+	box-shadow: 1px 4px 2px 2px #888b99;
+}
+.socialicons a i{
+	transition: all 0.3s linear;
+}
+.socialicons a:hover i{
+	transform: scale(1.4);
+}
+.fa-instagram{
+	color: #e84393;
+}
+.fa-linkedin{
+	color: #0097e6;
+}
+.fa-github{
+	color: #333;
+}
 
 
